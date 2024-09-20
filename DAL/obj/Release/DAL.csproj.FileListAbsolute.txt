@@ -1,0 +1,9 @@
+D:\Visual Studio Files\QLCuaHangSach\DAL\bin\Release\DAL.dll
+D:\Visual Studio Files\QLCuaHangSach\DAL\bin\Release\DAL.pdb
+D:\Visual Studio Files\QLCuaHangSach\DAL\bin\Release\DTO.dll
+D:\Visual Studio Files\QLCuaHangSach\DAL\bin\Release\DTO.pdb
+D:\Visual Studio Files\QLCuaHangSach\DAL\obj\Release\DAL.csproj.AssemblyReference.cache
+D:\Visual Studio Files\QLCuaHangSach\DAL\obj\Release\DAL.csproj.CoreCompileInputs.cache
+D:\Visual Studio Files\QLCuaHangSach\DAL\obj\Release\DAL.csproj.CopyComplete
+D:\Visual Studio Files\QLCuaHangSach\DAL\obj\Release\DAL.dll
+D:\Visual Studio Files\QLCuaHangSach\DAL\obj\Release\DAL.pdb

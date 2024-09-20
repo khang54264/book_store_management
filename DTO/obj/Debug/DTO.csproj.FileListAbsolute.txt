@@ -1,0 +1,6 @@
+D:\Visual Studio Files\QLCuaHangSach\DTO\bin\Debug\DTO.dll
+D:\Visual Studio Files\QLCuaHangSach\DTO\bin\Debug\DTO.pdb
+D:\Visual Studio Files\QLCuaHangSach\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Visual Studio Files\QLCuaHangSach\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Visual Studio Files\QLCuaHangSach\DTO\obj\Debug\DTO.dll
+D:\Visual Studio Files\QLCuaHangSach\DTO\obj\Debug\DTO.pdb

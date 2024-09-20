@@ -1,0 +1,11 @@
+D:\Visual Studio Files\QLCuaHangSach\BUS\bin\Release\BUS.dll
+D:\Visual Studio Files\QLCuaHangSach\BUS\bin\Release\BUS.pdb
+D:\Visual Studio Files\QLCuaHangSach\BUS\bin\Release\DAL.dll
+D:\Visual Studio Files\QLCuaHangSach\BUS\bin\Release\DTO.dll
+D:\Visual Studio Files\QLCuaHangSach\BUS\bin\Release\DAL.pdb
+D:\Visual Studio Files\QLCuaHangSach\BUS\bin\Release\DTO.pdb
+D:\Visual Studio Files\QLCuaHangSach\BUS\obj\Release\BUS.csproj.AssemblyReference.cache
+D:\Visual Studio Files\QLCuaHangSach\BUS\obj\Release\BUS.csproj.CoreCompileInputs.cache
+D:\Visual Studio Files\QLCuaHangSach\BUS\obj\Release\BUS.csproj.CopyComplete
+D:\Visual Studio Files\QLCuaHangSach\BUS\obj\Release\BUS.dll
+D:\Visual Studio Files\QLCuaHangSach\BUS\obj\Release\BUS.pdb

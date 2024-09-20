@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{619D6631-399D-4C8C-8B46-E4C62C434256}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cysHoaDonNhap.cs">
+      <DependentUpon>cysHoaDonNhap.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="cysHoaDonBan.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cysHoaDonBan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GUI_HDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_HDB.Designer.cs">
+      <DependentUpon>GUI_HDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HDN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_HDN.Designer.cs">
+      <DependentUpon>GUI_HDN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HoaDonBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_HoaDonBan.Designer.cs">
+      <DependentUpon>GUI_HoaDonBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_HoaDonNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_HoaDonNhap.Designer.cs">
+      <DependentUpon>GUI_HoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_InHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_InHD.Designer.cs">
+      <DependentUpon>GUI_InHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_KhachHang.Designer.cs">
+      <DependentUpon>GUI_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_LoaiSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_LoaiSach.Designer.cs">
+      <DependentUpon>GUI_LoaiSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Login.Designer.cs">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Menu.Designer.cs">
+      <DependentUpon>GUI_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_NhanVien.Designer.cs">
+      <DependentUpon>GUI_NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_NXB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_NXB.Designer.cs">
+      <DependentUpon>GUI_NXB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Sach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Sach.Designer.cs">
+      <DependentUpon>GUI_Sach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_TacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_TacGia.Designer.cs">
+      <DependentUpon>GUI_TacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ChangePass.Designer.cs">
+      <DependentUpon>GUI_ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_ThongKe.Designer.cs">
+      <DependentUpon>GUI_ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI_Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI_Users.Designer.cs">
+      <DependentUpon>GUI_Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\DinhDangEX.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cysHoaDonNhap.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cysHoaDonNhap.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cysHoaDonBan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cysHoaDonBan.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HDB.resx">
+      <DependentUpon>GUI_HDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HDN.resx">
+      <DependentUpon>GUI_HDN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HoaDonBan.resx">
+      <DependentUpon>GUI_HoaDonBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_HoaDonNhap.resx">
+      <DependentUpon>GUI_HoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_InHD.resx">
+      <DependentUpon>GUI_InHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_KhachHang.resx">
+      <DependentUpon>GUI_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_LoaiSach.resx">
+      <DependentUpon>GUI_LoaiSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Login.resx">
+      <DependentUpon>GUI_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Menu.resx">
+      <DependentUpon>GUI_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NhanVien.resx">
+      <DependentUpon>GUI_NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_NXB.resx">
+      <DependentUpon>GUI_NXB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Sach.resx">
+      <DependentUpon>GUI_Sach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_TacGia.resx">
+      <DependentUpon>GUI_TacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ChangePass.resx">
+      <DependentUpon>GUI_ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_ThongKe.resx">
+      <DependentUpon>GUI_ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI_Users.resx">
+      <DependentUpon>GUI_Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Lib\.vs\Lib\FileContentIndex\a7e1efae-02f9-4d33-ac80-af56f15ad5e0.vsidx" />
+    <None Include="Lib\.vs\Lib\FileContentIndex\read.lock" />
+    <None Include="Lib\.vs\Lib\v17\.wsuo" />
+    <None Include="Lib\.vs\slnx.sqlite" />
+    <None Include="Lib\.vs\VSWorkspaceState.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{b35b8f34-6440-4fe2-b2f7-35e1fc1bc1b4}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{ff2b1d7b-7a4d-40c1-b818-5e9ad46e52d4}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lib\.vs\Lib\FileContentIndex\merges\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
